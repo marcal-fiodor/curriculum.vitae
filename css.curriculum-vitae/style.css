@@ -1,0 +1,119 @@
+/*
+primária: #FFFFFF
+secundária: #159A9C
+destaque: #002333
+*/
+
+
+body {
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    padding-top: 38px;
+    font-size: 16.4px;
+}
+.foto {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    margin-left: 15px;
+}
+h1, h2, h3, h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #159A9C;
+    padding-left: 10px;
+}
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #002333;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+ul, li, ol {
+    color: #002333;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header {
+    background-color: #B4BEC9;
+    display: flex;
+    flex-direction: column;
+    height: 415px;
+}
+footer {
+    background-color: #B4BEC9;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    height: 140px;
+}
+.navegacao ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    margin: 0;
+    background-color: #002333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    justify-content: center;
+}
+.navegacao a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+.navegacao a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+abbr, strong {
+    color: #F27405;
+}
+ol {
+    list-style: none;
+    padding-right: 35px;
+    position: relative;
+    bottom: 30px;
+}
+footer p {
+    position: relative;
+    bottom: 35px;
+}
+.e-mail, .cidade {
+    font-weight: bold;
+}
+.e-mail {
+    position: relative;
+    bottom: 10px;
+}
+.cidade {
+    position: relative;
+    bottom: 35px;
+}
+@media screen and (max-width: 768px) {
+    .navegacao ul {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        padding: 15px 0;
+    }
+    .navegacao li {
+        text-align: center;
+    }
+    header {
+        padding-top: 110px;
+        height: auto;
+    }
+    .e-mail, .cidade {
+        position: relative;
+        bottom: 0;
+    }
+
+}
